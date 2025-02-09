@@ -5,6 +5,7 @@ import Education from './Education';
 import Experience from './Experience';
 import { FaExpeditedssl } from 'react-icons/fa';
 import Skills from './Skills';
+import ProjectExperience from './ProjectExperience';
 
 function MyTabs() {
   const [activeKey, setActiveKey] = useState('education');
@@ -38,6 +39,14 @@ function MyTabs() {
             >
               Skills
             </ListGroup.Item>
+            <ListGroup.Item
+              action
+              active={activeKey === 'projectExperience'}
+              onClick={() => setActiveKey('projectExperience')}
+              style={activeKey === 'projectExperience' ? { backgroundColor: 'blue', color: 'white' } : {}}
+            >
+              Project Experience
+            </ListGroup.Item>
           </ListGroup>
         </Col>
         <Col sm={9}>
@@ -50,6 +59,9 @@ function MyTabs() {
             </Tab.Pane>
             <Tab.Pane eventKey="skills" active={activeKey === 'skills'}>
               <Skills/>
+            </Tab.Pane>
+            <Tab.Pane eventKey="projectExperience" active={activeKey === 'projectExperience'}>
+              <ProjectExperience/>
             </Tab.Pane>
           </Tab.Content>
         </Col>

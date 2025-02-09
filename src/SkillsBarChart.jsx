@@ -7,11 +7,17 @@ const skillsData = [
   { title: "Rest webservices", text: "5 year of experience", experience: 5 },
   { title: "React JS", text: "1 year of experience", experience: 1 },
   { title: "Node.js", text: "1 year of experience", experience: 1 },
-  { title: "PL/SQL and Oracle", text: "5 year of experience", experience: 5 },
+  { title: "Javascript", text: "3 year of experience", experience: 3 },
+  { title: "PL/SQL, Oracle", text: "5 year of experience", experience: 5 },
   { title: "Tomcat/wildfly", text: "3 year of experience", experience: 3 },
   { title: "Python", text: "1 year of experience", experience: 1 },
   { title: "VBS", text: "1 year of experience", experience: 1 },
   { title: "Excel Macros", text: "1 year of experience", experience: 1 },
+  { title: "Git", text: "5 year of experience", experience: 5 },
+  { title: "SVN", text: "3 year of experience", experience: 3 },
+  { title: "IBM Clearcase", text: "2 year of experience", experience: 2 },
+  
+
   // Add more skills as needed
 ];
 
