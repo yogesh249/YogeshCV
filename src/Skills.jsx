@@ -1,11 +1,12 @@
 import React from "react";
+import "./Skills.css"; // Import the CSS file
+import SkillsBarChart from "./SkillsBarChart";
 
 function Skills() {
+ 
+
   return (
-    <div>
-      <h3>Skills</h3>
-      <p>Details about skills...</p>
-    </div>
+    <div><SkillsBarChart/></div>
   );
 }
 

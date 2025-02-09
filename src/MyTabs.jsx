@@ -4,13 +4,14 @@ import { useState } from 'react';
 import Education from './Education';
 import Experience from './Experience';
 import { FaExpeditedssl } from 'react-icons/fa';
+import Skills from './Skills';
 
 function MyTabs() {
   const [activeKey, setActiveKey] = useState('education');
 
   return (
-    <Container fluid style={{ backgroundColor: 'gray', height: '100vh', width: '100vw', marginTop: 0, marginLeft: 0, paddingTop: 0, paddingLeft: 0 }}>
-      <Row>
+    <Container fluid style={{ backgroundColor: 'white', height: '100vh', width: '100vw', marginTop: 0, marginLeft: 0, paddingTop: 0, paddingLeft: 0 }}>
+      <Row style={{ paddingTop: 0, paddingBottom:0 }}>
         <Col sm={2}>
           <ListGroup>
             <ListGroup.Item
@@ -48,8 +49,7 @@ function MyTabs() {
               <Experience/>
             </Tab.Pane>
             <Tab.Pane eventKey="skills" active={activeKey === 'skills'}>
-              <h3>Skills</h3>
-              <p>Details about skills...</p>
+              <Skills/>
             </Tab.Pane>
           </Tab.Content>
         </Col>
