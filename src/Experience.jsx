@@ -9,7 +9,7 @@ function Experience() {
     { companyName: "HCL Technologies", designation: "Senior Tech Lead", duration: "3 years", logo: "https://www.hcltech.com/themes/custom/hcltech/images/hcltech-new-logo.svg" },
     { companyName: "IGate", designation: "Tech Lead", duration: "3 years" ,  logo: "https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo.svg"},
     { companyName: "Nucleus Software", designation: "Senior Software Engineer", duration: "3 years", logo: "https://www.nucleussoftware.com/wp-content/themes/Nucleus/assets/images/logo_dark.svg" },
-    { companyName: "Infosys", designation: "Software Engineer", duration: "5 years",,
+    { companyName: "Infosys", designation: "Software Engineer", duration: "5 years"},
   ];
 
   return (
