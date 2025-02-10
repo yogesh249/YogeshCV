@@ -1,25 +1,24 @@
-import Nav from 'react-bootstrap/Nav';
+import React, { useState } from 'react';
 import { Container, Row, Col, Tab, ListGroup } from 'react-bootstrap';
-import { useState } from 'react';
 import Education from './Education';
 import Experience from './Experience';
-import { FaExpeditedssl } from 'react-icons/fa';
 import Skills from './Skills';
 import ProjectExperience from './ProjectExperience';
+import './MyTabs.css'; // Import the custom CSS file
 
 function MyTabs() {
   const [activeKey, setActiveKey] = useState('education');
 
   return (
     <Container fluid style={{ backgroundColor: 'white', height: '100vh', width: '100vw', marginTop: 0, marginLeft: 0, paddingTop: 0, paddingLeft: 0 }}>
-      <Row style={{ paddingTop: 0, paddingBottom:0 }}>
+      <Row style={{ paddingTop: 0, paddingBottom: 0 }}>
         <Col sm={2}>
           <ListGroup>
             <ListGroup.Item
               action
               active={activeKey === 'education'}
               onClick={() => setActiveKey('education')}
-              style={activeKey === 'education' ? { backgroundColor: 'blue', color: 'white' } : {}}
+              className={activeKey === 'education' ? 'active' : ''}
             >
               Education
             </ListGroup.Item>
@@ -27,7 +26,7 @@ function MyTabs() {
               action
               active={activeKey === 'experience'}
               onClick={() => setActiveKey('experience')}
-              style={activeKey === 'experience' ? { backgroundColor: 'blue', color: 'white' } : {}}
+              className={activeKey === 'experience' ? 'active' : ''}
             >
               Experience
             </ListGroup.Item>
@@ -35,7 +34,7 @@ function MyTabs() {
               action
               active={activeKey === 'skills'}
               onClick={() => setActiveKey('skills')}
-              style={activeKey === 'skills' ? { backgroundColor: 'blue', color: 'white' } : {}}
+              className={activeKey === 'skills' ? 'active' : ''}
             >
               Skills
             </ListGroup.Item>
@@ -43,7 +42,7 @@ function MyTabs() {
               action
               active={activeKey === 'projectExperience'}
               onClick={() => setActiveKey('projectExperience')}
-              style={activeKey === 'projectExperience' ? { backgroundColor: 'blue', color: 'white' } : {}}
+              className={activeKey === 'projectExperience' ? 'active' : ''}
             >
               Project Experience
             </ListGroup.Item>

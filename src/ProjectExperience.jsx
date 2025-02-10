@@ -1,17 +1,14 @@
 import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card'
 function ProjectExperience() {
-    const [variant, setVariant] = useState("Secondary");
-
-
-
+    const [variant, setVariant] = useState("Primary");
   return (
     <div>
         <Card 
           bg={variant.toLowerCase()}
           key={variant}
           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-          style={{ width: '100%' }} // Set width to 100%
+          style={{ width: '50rem' }} // Set width to 100%
           className="mb-2"
         >
           <Card.Header>Tech Mahindra–Technical Specialist</Card.Header>
@@ -19,8 +16,8 @@ function ProjectExperience() {
             <Card.Title>ALCS</Card.Title>
 
             <Card.Text>
-                 Spearheaded the development of a high-performance XML parser, resulting in a monthly cost reduction of 
-$10,000 and a 20% boost in processing efficiency.
+                 <li>pearheaded the development of a high-performance XML parser, resulting in a monthly cost reduction of 
+$10,000 and a 20% boost in processing efficiency.</li>
 <li>Led a cross-functional team of 6 developers, ensuring timely delivery and consistent code quality through 
 rigorous code reviews and team mentoring.</li>
 <li>Collaborated with stakeholders, aligning technical solutions with business objectives, resulting in a 15% 
@@ -59,7 +56,7 @@ Benefits to the Business: This gave the end-user a one stop portal to go to when
           bg={variant.toLowerCase()}
           key={variant}
           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-          style={{ width: '18rem' }}
+          style={{ width: '50rem' }}
           className="mb-2"
         >
           <Card.Header>Header</Card.Header>
