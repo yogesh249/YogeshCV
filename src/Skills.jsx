@@ -29,7 +29,7 @@ function Skills() {
   return (
     <div className="skills-container">
       {skillsData.map((skill, index) => (
-        <Card key={index} className="mb-2" style={{ width: "18rem" }}>
+        <Card key={index} className="mb-2 mx-auto" style={{ width: "100%", maxWidth: "18rem" }}>
           <Card.Body>
             <Card.Img variant="top" src={skill.imgSrc} alt={skill.title} />
             <Card.Title>{skill.title}</Card.Title>

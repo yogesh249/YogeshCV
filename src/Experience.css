@@ -1,0 +1,12 @@
+.experience-container {
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.experience-table {
+  max-height: 300px;
+  overflow-y: auto;
+  display: block;
+}
